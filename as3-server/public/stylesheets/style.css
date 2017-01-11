@@ -1,0 +1,32 @@
+section, aside, footer{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+section{
+    float: left;
+    width: 45%;
+    margin: 0 auto;
+    min-width: 100px;
+    overflow: auto
+}
+
+aside{
+    float: right;
+    padding-bottom: 180px;
+    background-color: beige;
+    width: 40%;
+    margin: 0 auto;
+    overflow: auto
+}
+
+footer{
+    clear: both;
+    background-color: crimson;
+    display: none;
+}
+
+input{
+    text-align: center;
+}
+

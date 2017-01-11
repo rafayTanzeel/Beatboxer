@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BeagleBone Beat-Box</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+</head>
+<body>
+
+<header>
+    <h1>BeagleBone Beat-Box</h1>
+    <h3>by Rafay Tanzeel</h3>
+</header>
+
+<section>
+
+    <div>
+        <h2>Drum Beat Selection</h2>
+        <p>Current Drum Beat mode is: <span><strong>Rock 1</strong></span></p>
+
+        <input type="button" id="btnNone" value="None"/>
+        <input type="button" id="btnR1B" value="Rock 1"/>
+        <input type="button" id="btnR2B"  value="Rock 2"/>
+    </div>
+
+
+   <div>
+       <div>
+           <h4>Volume</h4>
+           <input type="button" id="btnVolAdd" value="+"/>
+           <input type="text" name="Volume" value="80" id="Volume" disabled>
+           <input type="button" id="btnVolSub" value="-"/>
+           <span>(0-100)</span>
+       </div>
+
+       <div>
+           <h4>Tempo</h4>
+           <input type="button" id="btnTempoAdd" value="+"/>
+           <input type="text" name="Tempo" value="120" id="Tempo" disabled>
+           <input type="button" id="btnTempoSub" value="-"/>
+           <span>BPM</span>
+       </div>
+   </div>
+
+    <div>
+        <h2>Play Drum Sounds</h2>
+        <input type="button" id="btnHH" value="Hit_hat"/>
+        <input type="button" id="btnSN" value="Snare"/>
+        <input type="button" id="btnB"  value="Base"/>
+    </div>
+
+
+</section>
+
+<aside>
+    <h2>BeatBox's Status</h2>
+    <p>
+        <div>Device up for:</div>
+        <span id="uptime">00:00:00</span>(H:M:S)
+    </p>
+
+</aside>
+
+<footer>
+    <h2>Server Error</h2>
+    <p>Server Error Detected. Please resolve error before continuing.</p>
+    <p>SERVER ERROR: No response from beat-box application. Is it running?</p>
+
+</footer>
+
+<script src='/socket.io/socket.io.js' type='text/javascript'></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+<script type="text/javascript" src="javascripts/script.js"></script>
+
+</body>
+</html>
